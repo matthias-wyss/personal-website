@@ -10,7 +10,6 @@ You can visit it here: [https://matthiaswyss.fr](https://matthiaswyss.fr)
 
 - Jekyll (Static Site Generator)
 - Beautiful Jekyll theme
-- GitHub Pages (or custom hosting, if applicable)
 
 ## Purpose
 
