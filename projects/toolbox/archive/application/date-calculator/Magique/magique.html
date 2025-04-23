@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat"/>  <!-- import de la police -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">  <!-- import de la police -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">  <!-- import de la police -->
+    <link rel="stylesheet" href="stylemagique.css"/>  <!-- relie la page html à la page css -->
+    <script src="../indexdate.js"></script> <!-- relie la page html à la page javascript -->
+    <title>Magic Date Calculator</title> <!-- titre de la page -->
+</head>
+  <body>
+
+    <header>
+      <div class="logo-nav"> <!-- class du logo toolbox pour le css -->
+           <a href="../../../index.html"> <!-- lien ramenant à la page d'accueil -->
+               <img src="../../../images/toolbox.svg" alt="ToolBox logo"> <!-- image du logo toolbox -->
+           </a>
+      </div>
+      <h1 class="nav-title">Date Calculator</h1> <!-- titre de la page dans la bande orange en haut -->
+      <div class="return-img"> <!-- class du logo retour pour le css -->
+           <a href="../date.html"> <!-- lien ramenant à la page d'accueil -->
+               <img src="../../../images/return-btn.png" alt="Return image"> <!-- image du logo retour -->
+           </a>
+      </div>
+  </header>
+
+
+      <div class ="phrase1"> <!-- class de la première phrase pour le css -->
+        <h2>Vous souhaitez savoir combien de jours vous pourrez profiter de vos futures vacances ?</h2> <!-- première phrase -->
+      </div>
+
+
+      <div class ="phrase2">  <!-- class de la deuxième phrase pour le css -->
+        <h2>Voilà la solution !</h2> <!-- deuxième phrase -->
+      </div>
+
+
+      <img id="palmier1" src="../images/palmier1.png"> <!-- class de l'image du palmier de gauche pour le css + image palmier gauche -->
+      <img id="palmier2" src="../images/palmier2.png"> <!-- class de l'image du palmier de droite pour le css + image palmier droit -->
+
+      <div class ="phrase3">  <!-- class de la troisième phrase pour le css -->
+        <h2>Il suffit d'entrer la date d'arrivée et de départ de votre séjour en vacances</h2> <!-- troisième phrase -->
+      </div>
+
+      <div class ="phrase4">  <!-- class de la quatrième phrase pour le css -->
+          <h2>Et d'appuyer sur le bouton <a href="../date.html">magique</a> !!</h2> <!-- quatrième phrase + lien vers la page classique-->
+      </div>
+      
+
+      <img id="avion" src="../images/avion.png"> <!-- class de l'image de l'avion pour le css + image avion -->
+      <img id="valise" src="../images/valise.png"> <!-- class de l'image de la pour le css + image valise -->
+
+
+      <div class ="app"> <!-- class de toute l'application piano pour le css -->
+
+        <p>
+            <label id="ldate1" for="date1">Date d'arrivée : </label> <!-- texte avant la case + id du texte avant la case date d'arrivée pour le css -->
+            <input id="date1" type="date"> <!-- case pour écrire une date + id de la case pour le css -->
+        </p>
+
+        <p>
+            <label id="ldate2" for="date2">Date de départ : </label> <!-- texte avant la case + id du texte avant la case date de départ pour le css -->
+            <input id="date2" type="date"> <!-- case pour écrire une date + id de la case pour le css -->
+        </p>
+
+        <p>
+            <button id="calculer" OnClick="calculer()">CALCULER</button> <!-- bouton pour calculer + id du bouton pour le css + fonction onClick en javasript lorsque l'on clique sur le bouton -->
+        </p>
+
+        <p>
+            <label id="lnbjours" for="nbjours">Nombre de jours : </label> <!-- texte avant la case + id du texte avant la case nombre de jours pour le css -->
+            <input id="nbjours" type="text"> <!-- case pour écrire une date + id de la case pour le css -->
+        </p>
+
+    </div>
+
+    
+    <div class="bubbleOne"></div> <!-- class de la première bulle orange pour le css -->
+    <div class="bubbleTwo"></div> <!-- class de la deuxième bulle orange pour le css -->
+    <div class="bubbleThree"></div> <!-- class de la troisième bulle orange pour le css -->
+    <div class="bubbleFour"></div> <!-- class de la quatrième bulle orange pour le css -->
+
+  </body>
+</html>
+
+
+
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="../../images/toolbox.svg" />
+    <link rel="stylesheet" href="translate.css">
+    <script type="module" src="translateAPI.js" defer></script>
+    <title>ToolBox - Translate App</title>
+</head>
+<body>
+    <header>
+        <div class="logo-nav"> <!-- class du logo toolbox pour le css -->
+             <a href="../../index.html"> <!-- lien ramenant à la page d'accueil -->
+                 <img src="../../images/toolbox.svg" alt="ToolBox logo"> <!-- image du logo toolbox -->
+             </a>
+        </div>
+        <h1 class="nav-title">Traduction</h1> <!-- titre de la page dans la bande orange en haut -->
+        <div class="return-img"> <!-- class du logo retour pour le css -->
+             <a href="../../index.html"> <!-- lien ramenant à la page d'accueil -->
+                 <img src="../../images/return-btn.png" alt="Return image"> <!-- image du logo retour -->
+             </a>
+        </div>
+    </header>
+
+    <!-- Section qui sert de container -->
+    <section>   
+        <div class="content">   <!-- Div regroupant le contenu de la page -->
+            <div class="lang">  <!-- Div regroupant les deux selecteurs avec les langues -->
+                <div id="lang1" class="lang">
+                    <p>Langage détecté: </p>
+                </div>
+                <div id="lang2" class="lang">
+                    <select id="selectLanguage">
+
+                    </select>
+                </div>
+            </div>
+            <div class="area">  <!-- Div regroupant les deux textarea ou le text sera écrit pour être traduit -->
+                <div class="toTranslate">
+                    <textarea placeholder="Écrivez ici pour traduire puis appuyer sur le bouton !" id="toTranslate" name="toTranslate" cols="80" rows="20"></textarea>
+                </div>
+                <div class="tranlation">
+                    <textarea placeholder="Le text traduit s'affiche ici :)" id="translation" name="translation" cols="80" rows="20" readonly></textarea>
+                </div>
+            </div>
+            <div class="submit-content">
+                <button id="submitBtn" class="btn" type="submit">Traduire</button>
+            </div>
+        </div>
+    </section>
+        
+    <!-- Différente bulle que l'on voit sur la page -->
+    <div class="bubbleOne"></div>   
+    <div class="bubbleTwo"></div>
+    <div class="bubbleThree"></div>
+    <div class="bubbleFour"></div>
+
+    
+</body>
+</html>

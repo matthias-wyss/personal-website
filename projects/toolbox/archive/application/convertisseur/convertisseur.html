@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat"/>  <!-- import de la police -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">  <!-- import de la police -->
+    <link rel="stylesheet" href="styleconvertisseur.css"/>  <!-- relie la page html à la page css -->
+    <script src="index.js"></script> <!-- relie la page html à la page javascript -->
+    <title>Convertisseur B-D-HEX</title> <!-- titre de la page -->
+</head>
+    <body>
+
+
+        <header>
+            <div class="logo-nav"> <!-- class du logo toolbox pour le css -->
+                 <a href="../../index.html"> <!-- lien ramenant à la page d'accueil -->
+                     <img src="../../images/toolbox.svg" alt="ToolBox logo"> <!-- image du logo toolbox -->
+                 </a>
+            </div>
+            <h1 class="nav-title">Convertisseur B-D-HEX</h1> <!-- titre de la page dans la bande orange en haut -->
+            <div class="return-img"> <!-- class du logo retour pour le css -->
+                 <a href="../../index.html"> <!-- lien ramenant à la page d'accueil -->
+                     <img src="../../images/return-btn.png" alt="Return image"> <!-- image du logo retour -->
+                 </a>
+            </div>
+        </header>
+
+
+      <div class ="phrase1"> <!-- class de la première phrase pour le css -->
+        <h2>Entrez un nombre dans une de ces 3 cases</h2> <!-- première phrase -->
+      </div>
+
+      <div class ="phrase2">  <!-- class de la deuxième phrase pour le css -->
+          <h2>Et cliquez sur la flèche correspondante</h2> <!-- deuxième phrase -->
+      </div>
+
+
+      <div class ="app"> <!-- class de toute l'application piano pour le css -->
+
+            <p>
+                <label id="ldecimal" for="decimal">Décimal : </label> <!-- texte avant la case + id du texte avant la case décimal pour le css -->
+                <input type="text" id="decimal" name="decimal"> <!-- case pour écrire du texte + id de la case pour le css + name de la case pour le javascript -->
+                <input id="button" type="button" name="calcul1" value="&#8674;" onClick="xdecimal();"> <!-- bouton pour valider + id du bouton pour le css + name du bouton pour le javascript + fonction onClick en javasript lorsque l'on clique sur le bouton -->
+            </p>
+
+            <!-- le for du label est relié au id du input -->
+            <!-- value="&#8674;" permet d'afficher la flèche dans le bouton -->
+
+            <p>
+                <label id="lhexadecimal" for="hexadecimal">Hexadécimal : </label>  <!-- texte avant la case + id du texte avant la case décimal pour le css -->
+                <input type="text" id="hexadecimal" name="hexadecimal"> <!-- case pour écrire du texte + id de la case pour le css + name de la case pour le javascript -->
+                <input id="button" type="button" name="calcul2" value="&#8674;" onClick="xhexadecimal();"> <!-- bouton pour valider + id du bouton pour le css + name du bouton pour le javascript + fonction onClick en javasript lorsque l'on clique sur le bouton -->
+            </p>
+
+            <!-- le for du label est relié au id du input -->
+            <!-- value="&#8674;" permet d'afficher la flèche dans le bouton -->
+
+            <p>
+                <label id="lbinaire" for="hexadecimal">Binaire : </label>  <!-- texte avant la case + id du texte avant la case décimal pour le css -->
+                <input type="text" id="binaire" name="binaire"> <!-- case pour écrire du texte + id de la case pour le css + name de la case pour le javascript -->
+                <input id="button" type="button" name="calcul3" value="&#8674;" onClick="xbinaire();"> <!-- bouton pour valider + id du bouton pour le css + name du bouton pour le javascript + fonction onClick en javasript lorsque l'on clique sur le bouton -->
+            </p>
+
+            <!-- le for du label est relié au id du input -->
+            <!-- value="&#8674;" permet d'afficher la flèche dans le bouton -->
+
+      </div>
+
+      
+      <div class="bubbleOne"></div> <!-- class de la première bulle orange pour le css -->
+      <div class="bubbleTwo"></div> <!-- class de la deuxième bulle orange pour le css -->
+      <div class="bubbleThree"></div> <!-- class de la troisième bulle orange pour le css -->
+      <div class="bubbleFour"></div> <!-- class de la quatrième bulle orange pour le css -->
+
+    </body>
+</html>
+
+
+      

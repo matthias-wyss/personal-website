@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="toolbox.svg" />
+    <link rel="stylesheet" href="10style.css">
+    <title>Enigma - 10x10</title>
+</head>
+<body>
+    <header>
+        <div class="logo-nav"> <!-- class du logo toolbox pour le css -->
+          <a href="../../index.html"> <!-- lien ramenant à la page d'accueil -->
+              <img src="../../images/toolbox.svg" alt="ToolBox logo"> <!-- image du logo toolbox -->
+          </a>
+        </div>
+        <h1 class="nav-title">Le carré de 10</h1> <!-- titre de la page dans la bande orange en haut -->
+        <div class="return-img"> <!-- class du logo retour pour le css -->
+          <a href="enigma.html"> <!-- lien ramenant à la page d'accueil -->
+            <img src="../../images/return-btn.png" alt="Return image"> <!-- image du logo retour -->
+          </a>
+        </div>
+      </header>
+
+    <script>
+        function montrerSol(){
+            etatSolution = document.getElementById('solution')
+            if (etatSolution.style.display == 'none') 
+            {
+                etatSolution.style.display = 'block';
+                btnSolution.value = 'Cacher la solution'
+            }
+            else
+            {
+                etatSolution.style.display = 'none';
+                btnSolution.value = 'Montrer la solution'
+            }
+        }
+
+        function montrerIndice(){
+            etatIndice = document.getElementById('textIndice')
+            if (etatIndice.style.display == 'none') 
+            {
+                etatIndice.style.display = 'block';
+            }
+            else
+            {
+                etatIndice.style.display = 'none';
+            }
+        }
+    </script>
+
+    <div class=enonce>
+        <h3>Je multiplie 10 par 10. Le résultat est 30.</h4> 
+    </div>
+
+    <div class=question>
+        <h2>Pourquoi ?</h2>
+    </div>
+
+    <center><input type="button" id="btnSolution" value="Montrer la solution" onclick="montrerSol('solution')"/></center>
+
+
+
+    <div id="indice">
+        <button id="indice" onclick="montrerIndice('textIndice')"><img src="indice.jpg"></button>
+    </div>
+    
+    <div id="textIndice" style="display: none">
+        <h4>Bravo !!! Vous avez le droit à un indice : Pensez aux chiffres romains !</h4>
+    </div>
+
+    <div class="sherlock">
+        <img src="sherlock.webp">
+    </div>
+
+    <div id="solution" style="display:none">
+        <p>Si l'on prend 10 en chiffre romain cela donne : x(dix) x(multiplie) x(dix). cela donne xxx qui vaut 30 en chiffres romains 
+        </p>
+    </div>
+
+    <div class="pensif">
+        <img src="enigme.png">
+    </div>
+
+    <div class="bubbleOne"></div>
+    <div class="bubbleTwo"></div>
+    <div class="bubbleThree"></div>
+    <div class="bubbleFour"></div>

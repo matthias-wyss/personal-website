@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+}
+
+/*****************************************************************************************************************************************/
+/*                                                        ENIGMA                                                                         */
+/*****************************************************************************************************************************************/
+h1{
+   color: white;
+   font-size: 2.5em; 
+}  
+ 
+p{
+    font-size: 3px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+p:hover{
+    font-size: medium;
+}
+
+h2{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.gallery {
+    border: 1px solid #ccc;
+  }
+  
+.gallery:hover{
+    border: 1px solid #777;
+}
+  
+.gallery img{
+    width: 100%;
+    height: auto;
+}
+  
+.titre{
+    padding: 15px;
+    text-align: center;
+}
+  
+.enigme{
+    padding: 10px 10px;
+    float: left;
+    width: 24.99999%;
+}
+  
+@media only screen and (max-width: 800px){
+    .enigme {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+}
+  
+@media only screen and (max-width: 500px){
+    .enigme {
+      width: 100%;
+    }
+}
+  
+.clearfix:after{
+    overflow: auto;
+}
+
+
+
+/*****************************************************************************************************************************************/
+/*                                                        HEADER                                                                         */
+/*****************************************************************************************************************************************/
+
+
+header{ /* correspond à la bande orange en haut */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FA7C50;
+    height: 10vh;
+    padding: 10px 20px;
+  }
+  
+  .logo-nav a img{ /* correspond au logo toolbox en haut à gauche */
+    width: 50px;
+    height: 50px;
+  }
+  
+  .logo-nav a img:hover{ /* correspond au logo toolbox en haut à gauche lorque l'on passe la souris dessus*/
+    transform: scale(1.1);
+  }
+  
+  .nav-title { /* correspond au titre "Piano" dans la bande orange en haut */
+    color: #fff;
+    font-size: 2.5em;
+  }
+  
+  .return-img a img { /* correspond au logo retour en haut à droite */
+    width: 3vw;
+    height: 5vh;
+  }
+  
+  .return-img a img:hover{ /* correspond au logo retour en haut à droite lorque l'on passe la souris dessus*/
+      transform: scale(1.1);
+  }
+  
+

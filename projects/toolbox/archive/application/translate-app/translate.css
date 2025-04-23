@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+}
+
+.btn {
+    padding: 5px;
+    font-size: 1.2empx;
+    background-color: #fff;
+    border: 2px solid #FA7C50;
+    border-radius: 3px;
+    color: #FA7C50;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+}
+
+/*****************************************************************************************************************************************/
+/*                                                        HEADER                                                                         */
+/*****************************************************************************************************************************************/
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FA7C50;
+    height: 10vh;
+    padding: 10px 20px;
+    color: white;
+}
+
+header div
+{
+    margin-right: 10px;
+}
+
+.logo-nav a img{
+    width: 50px;
+    height: 50px;
+}
+
+.logo-nav a img:hover{
+    transform: scale(1.1);
+}
+
+.return-img a img { /* correspond au logo retour en haut à droite */
+    width: 3vw;
+    height: 5vh;
+}
+
+.return-img a img:hover{ /* correspond au logo retour en haut à droite lorque l'on passe la souris dessus*/
+    transform: scale(1.1);
+}
+
+
+/*****************************************************************************************************************************************/
+/*                                                        CONTENT                                                                        */
+/*****************************************************************************************************************************************/
+
+section{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+section .content {
+    margin: 0 auto;
+}
+
+section .content .lang{
+    display: flex;
+    justify-content: space-between;
+}
+
+section .content .area {
+    display: flex;
+}
+
+section .content .lang, section .content .lang select option  {
+    font-size: 20px;
+}
+
+.submit-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+textarea[readonly] {
+    cursor: default;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************************************************************************************************************************************/
+/*                                                        BUBBLE                                                                         */
+/*****************************************************************************************************************************************/
+
+.bubbleOne {
+    position: absolute;
+    bottom: 0; left: 0;
+    z-index: -1;
+    border-radius: 50%;
+    width: 322px;
+    height: 274px;
+    background: rgba(242, 134, 83, 0.15);
+}
+
+.bubbleTwo {
+    position: absolute;
+    top: 25vh; left: 25vw;
+    border-radius: 50%;
+    z-index: -1;
+    width: 185px;
+    height: 162px;
+    background: rgba(184, 90, 45, 0.15);
+}
+
+.bubbleThree {
+    position: absolute;
+    top: 60vh; left: 55vw;
+    border-radius: 50%;
+    z-index: -1;
+    width: 185px;
+    height: 162px;
+    background: rgba(184, 90, 45, 0.15);
+}
+
+.bubbleFour {
+    position: absolute;
+    top: 40vh; right: 5vw;
+    border-radius: 50%;
+    z-index: -1;
+    width: 185px;
+    height: 162px;
+    background: rgba(184, 90, 45, 0.15);
+}

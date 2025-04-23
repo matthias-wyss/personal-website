@@ -1,0 +1,435 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+font-family: 'Roboto', sans-serif;
+min-height: 100vh;
+overflow: hidden;
+}
+
+
+/*****************************************************************************************************************************************/
+/*                                                        HEADER                                                                         */
+/*****************************************************************************************************************************************/
+
+
+header{ /* correspond à la bande orange en haut */
+display: flex;
+align-items: center;
+justify-content: space-between;
+background: #FA7C50;
+height: 10vh;
+padding: 10px 20px;
+}
+
+.logo-nav a img{ /* correspond au logo toolbox en haut à gauche */
+width: 50px;
+height: 50px;
+}
+
+.logo-nav a img:hover{ /* correspond au logo toolbox en haut à gauche lorque l'on passe la souris dessus*/
+transform: scale(1.1);
+}
+
+.nav-title { /* correspond au titre "Date Calculator" dans la bande orange en haut */
+color: #fff;
+font-size: 2.5em;
+}
+
+.return-img a img { /* correspond au logo retour en haut à droite */
+width: 3vw;
+height: 5vh;
+}
+
+.return-img a img:hover{ /* correspond au logo retour en haut à droite lorque l'on passe la souris dessus*/
+  transform: scale(1.1);
+}
+
+
+/*****************************************************************************************************************************************/
+/*                                                        MAGIC DATE CALCULATOR                                                          */
+/*****************************************************************************************************************************************/
+
+
+h2 {
+  animation-name: colorH2;  /* application de l'animation colorH2 */
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+a { /*enlève la décoration de tous les liens*/
+  text-decoration: none;
+  color: black;
+  animation-name: colorH2;  /* application de l'animation colorH2 */
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+.phrase1 { /* correspond à la phrase : "Vous souhaitez savoir combien de jours vous pourrez profiter de vos futures vacances ?" */
+  text-align: center;
+  font-size: 30px;
+  margin-top: 3%;
+}
+
+.phrase2 { /* correspond à la phrase : "Voilà la solution !" */
+  text-align: center;
+  font-size:25px;
+  margin-top: 3%;
+}
+
+#palmier1 { /* correspond à l'image du palmier en haut à gauche */
+  margin-top: -5%;
+  margin-left: 6%;
+  max-width: 15%;
+  height: auto;
+  -webkit-transform: rotate(350deg);
+  -moz-transform: rotate(350deg);
+  -ms-transform: rotate(350deg);
+  -o-transform: rotate(350deg);
+  transform: rotate(350deg);
+}
+
+#palmier1:hover { /* correspond à l'image du palmier en haut à gauche lorsque l'on passe la souris dessus*/
+  transform: scaleX(-1);
+  transition-duration: 10ms;
+}
+
+#palmier2 { /* correspond à l'image du palmier en haut à droite */
+  margin-top: -12%;
+  margin-left: 80%;
+  max-width: 15%;
+  height: auto;
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+#palmier2:hover { /* correspond à l'image du palmier en haut à droite lorsque l'on passe la souris dessus*/
+  transform: scaleX(-1);
+  transition-duration: 10ms;
+}
+
+.phrase3 { /* correspond à la phrase : "Il suffit d'entrer la date d'arrivée et de départ de votre séjour en vacances" */
+  text-align: center;
+  font-size: 20px;
+  margin-top: -3%;
+}
+
+.phrase4 { /* correspond à la phrase : "Et d'appuyer sur le bouton magique !!" */
+  text-align: center;
+  font-size: 20px;
+  margin-top: 1%;
+}
+
+#avion { /* correspond à l'image de l'avion à gauche */
+  max-width: 28%;
+  height: auto;
+  margin-top: 2%;
+  margin-left: 5%;
+  position: relative;
+  animation-name: animavion;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; /* l'animation reste à l'état 100% */
+}
+
+#valise { /* correspond à l'image de la valise à droite */
+  max-width: 12%;
+  height: auto;
+  margin-top: -7%;
+  margin-left: 75%;
+}
+
+#valise:hover { /* application de l'animation animvalise lorsque l'on passe la sousis dessus */
+  position: relative;
+  animation-name: animvalise;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.app { /* correspond à toute l'application date calculator */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -18%;
+}
+
+#ldate1 { /*correspond texte avant la première case*/
+  font-size: 2em;
+  color: black;
+  font-family: 'Pacifico', sans-serif;
+}
+
+#date1 { /*correspond à la première case*/
+  align-content: center;
+  margin-top: 20%;
+  font-size: 1.5em;
+  border-width: 0.1em;
+  border-color: black;
+}
+
+#ldate2 { /*correspond autexte avant la deuxième case*/
+  font-size: 2em;
+  color: black;
+  font-family: 'Pacifico', sans-serif;
+}
+
+#date2 { /*correspond à la deuxième case*/
+  align-content: center;
+  margin-top: 5%;
+  font-size: 1.5em;
+  border-width: 0.1em;
+  border-color: black;
+}
+
+#calculer { /*correspond au  bouton*/
+  align-content: center;
+  margin-top: 25%;
+  font-size: 2em;
+  color: black;
+  font-family: 'Roboto Mono', monospace;
+  border-width: 0.1em;
+  border-color: black;
+}
+
+#lnbjours { /*correspond au texte avant la troisème case*/
+  font-size: 2em;
+  color: black;
+  font-family: 'Pacifico', sans-serif;
+}
+
+#nbjours { /*correspond a la troisième case*/
+  align-content: center;
+  margin-top: 10%;
+  font-size: 1.5em;
+  border-width: 0.1em;
+  border-color: black;
+}
+
+
+/*****************************************************************************************************************************************/
+/*                                                        ANIMATIONS                                                                     */
+/*****************************************************************************************************************************************/
+
+
+@keyframes colorH2 { /* permet changer de couleur (texte et ombre) de h2 */
+  0% {
+      color:green; text-shadow: 2px 2px 5px green;
+  }
+  12% {
+      color:red; text-shadow: 2px 2px 5px red;
+  }
+  25% {
+      color:yellow; text-shadow: 2px 2px 5px yellow;
+  }
+  38% {
+      color:red; text-shadow: 2px 2px 5px red;
+  }
+  50% {
+      color:green; text-shadow: 2px 2px 5px green;
+  }
+  62%{
+      color:red; text-shadow: 2px 2px 5px red;
+  }
+  75% {
+      color:yellow; text-shadow: 2px 2px 5px yellow;
+  }
+  88% {
+      color:red; text-shadow: 2px 2px 5px red;
+  }
+  100% {
+      color:green; text-shadow: 2px 2px 5px green;
+  }
+}
+
+
+@keyframes animavion { /* permet de faire bouger l'avion */
+  0% {
+    left: 0px; bottom: 0px; transform: rotate(0deg);
+  }
+  2% {
+    left: 10px; bottom: 0px;
+  }
+  5% {
+    left: 20px; bottom: 0px;
+  }
+  7% {
+    left: 30px; bottom: 0px;
+  }
+  10% {
+    left: 40px; bottom: 0px;
+  }
+  12% {
+    left: 50px; bottom: 0px;
+  }
+  15% {
+    left: 60px; bottom: 0px;
+  }
+  17% {
+    left: 70px; bottom: 0px;
+  }
+  20% {
+    left: 80px; bottom: 0px;
+  }
+  22% {
+    left: 90px; bottom: 0px;
+  }
+  25% {
+    left: 100px; bottom: 10px;
+  }
+  27% {
+    left: 120px; bottom: 20px;
+  }
+  30% {
+    left: 140px; bottom: 30px;
+  }
+  32% {
+    left: 160px; bottom: 40px;
+  }
+  35% {
+    left: 180px; bottom: 50px;
+  }
+  37% {
+    left: 200px; bottom: 60px;
+  }
+  40% {
+    left: 230px; bottom: 70px;
+  }
+  42% {
+    left: 260px; bottom: 80px;
+  }
+  45% {
+    left: 290px; bottom: 90px; transform: rotate(-5deg);
+  }
+  47% {
+    left: 330px; bottom: 100px;
+  }
+  50% {
+    left: 370px; bottom: 120px;
+  }
+  52% {
+    left: 410px; bottom: 140px;
+  }
+  55%{
+    left: 450px; bottom: 160px; transform: rotate(-10deg);
+  }
+  57% {
+    left: 500px; bottom: 180px;
+  }
+  60% {
+    left: 550px; bottom: 200px;
+  }
+  62% {
+    left: 600px; bottom: 230px;
+  }
+  65% {
+    left: 660px; bottom: 260px; transform: rotate(-15deg);
+  }
+  67% {
+    left: 720px; bottom: 290px;
+  }
+  70% {
+    left: 780px; bottom: 330px;
+  }
+  72% {
+    left: 850px; bottom: 370px;
+  }
+  75% {
+    left: 920px; bottom: 410px;
+  }
+  77% {
+    left: 1000px; bottom: 450px;
+  }
+  80% {
+    left: 1070px; bottom: 500px;
+  }
+  82% {
+    left: 1140px; bottom: 550px;
+  }
+  85% {
+    left: 1210px; bottom: 600px;
+  }
+  87% {
+    left: 1290px; bottom: 660px;
+  }
+  90% {
+    left: 1370px; bottom: 720px;
+  }
+  92% {
+    left: 1450px; bottom: 780px;
+  }
+  95% {
+    left: 1520px; bottom: 850px;
+  }
+  97% {
+    left: 1600px; bottom: 920px;
+  }
+  100% {
+    left: 1750px; bottom: 1000px; transform: rotate(-15deg);
+  }
+}
+
+@keyframes animvalise { /* permet de faire tourner la valise */
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+/*****************************************************************************************************************************************/
+/*                                                        BUBBLE                                                                         */
+/*****************************************************************************************************************************************/
+
+
+.bubbleOne { /* correspond à la première bulle orange en arrière plan */
+  position: absolute;
+  bottom: 0; left: 0;
+  z-index: -1;
+  border-radius: 50%;
+  width: 322px;
+  height: 274px;
+  background: rgba(242, 134, 83, 0.15);
+}
+
+.bubbleTwo { /* correspond à la deuxième bulle orange en arrière plan */
+  position: absolute;
+  top: 25vh; left: 25vw;
+  border-radius: 50%;
+  z-index: -1;
+  width: 185px;
+  height: 162px;
+  background: rgba(184, 90, 45, 0.15);
+}
+
+.bubbleThree { /* correspond à la troisième bulle orange en arrière plan */
+  position: absolute;
+  top: 60vh; left: 55vw;
+  border-radius: 50%;
+  z-index: -1;
+  width: 185px;
+  height: 162px;
+  background: rgba(184, 90, 45, 0.15);
+}
+
+.bubbleFour { /* correspond à la quatrième bulle orange en arrière plan */
+  position: absolute;
+  top: 40vh; right: 5vw;
+  border-radius: 50%;
+  z-index: -1;
+  width: 185px;
+  height: 162px;
+  background: rgba(184, 90, 45, 0.15);
+}

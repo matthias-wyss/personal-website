@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+
+/*****************************************************************************************************************************************/
+/*                                                        HEADER                                                                         */
+/*****************************************************************************************************************************************/
+
+
+header{ /* correspond à la bande orange en haut */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #FA7C50;
+  height: 10vh;
+  padding: 10px 20px;
+}
+
+.logo-nav a img{ /* correspond au logo toolbox en haut à gauche */
+  width: 50px;
+  height: 50px;
+}
+
+.logo-nav a img:hover{ /* correspond au logo toolbox en haut à gauche lorque l'on passe la souris dessus*/
+  transform: scale(1.1);
+}
+
+.nav-title { /* correspond au titre "Convertisseur B-D-HEX" dans la bande orange en haut */
+  color: #fff;
+  font-size: 2.5em;
+}
+
+.return-img a img { /* correspond au logo retour en haut à droite */
+  width: 3vw;
+  height: 5vh;
+}
+
+.return-img a img:hover{ /* correspond au logo retour en haut à droite lorque l'on passe la souris dessus*/
+    transform: scale(1.1);
+}
+
+
+/*****************************************************************************************************************************************/
+/*                                                        CONVERTISSEUR                                                                  */
+/*****************************************************************************************************************************************/
+
+
+.phrase1 { /* correspond à la phrase : "Entrez un nombre dans une de ces 3 cases" */
+  text-align: center;
+  font-size: 2em;
+  margin-top: 7%;
+}
+
+.phrase2 { /* correspond à la phrase : "Et cliquez sur la flèche correspondante" */
+  text-align: center;
+  font-size: 1.7em;
+  margin-top: 2%;
+}
+  
+.app { /* correspond à toute l'application convertisseur */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ldecimal { /*correspond texte avant la première case*/
+  font-size: 2em;
+  font-family: 'Roboto Mono', monospace;
+}
+
+#decimal { /*correspond à la première case*/
+  align-content: center;
+  margin-top: 20%;
+  font-size: 2em;
+  font-family: 'Roboto Mono', monospace;
+  border-width: 0.1em;
+  border-color: black;
+  text-transform: uppercase;
+}
+
+#lhexadecimal { /*correspond autexte avant la deuxième case*/
+  font-size: 2em;
+  font-family: 'Roboto Mono', monospace;
+}
+
+#hexadecimal { /*correspond à la deuxième case*/
+  align-content: center;
+  margin-top: 2%;
+  font-size: 2em;
+  font-family: 'Roboto Mono', monospace;
+  border-width: 0.1em;
+  border-color: black;
+  text-transform: uppercase;
+  }
+
+#lbinaire { /*correspond au texte avant la troisème case*/
+  font-size: 2em;
+  font-family: 'Roboto Mono', monospace;
+}
+
+#binaire { /*correspond a la troisième case*/
+  align-content: center;
+  margin-top: 2%;
+  font-size: 2em;
+  font-family: 'Roboto Mono', monospace;
+  border-width: 0.1em;
+  border-color: black;
+  text-transform: uppercase;
+}
+
+#button { /*correspond aux 3 boutons*/
+  font-size: 2em;
+  color: black;
+  font-family: 'Roboto Mono', monospace;
+  border-width: 0.1em;
+  border-color: black;
+}
+
+
+/*****************************************************************************************************************************************/
+/*                                                        BUBBLE                                                                         */
+/*****************************************************************************************************************************************/
+
+
+.bubbleOne { /* correspond à la première bulle orange en arrière plan */
+  position: absolute;
+  bottom: 0; left: 0;
+  z-index: -1;
+  border-radius: 50%;
+  width: 322px;
+  height: 274px;
+  background: rgba(242, 134, 83, 0.15);
+}
+
+.bubbleTwo { /* correspond à la deuxième bulle orange en arrière plan */
+  position: absolute;
+  top: 25vh; left: 25vw;
+  border-radius: 50%;
+  z-index: -1;
+  width: 185px;
+  height: 162px;
+  background: rgba(184, 90, 45, 0.15);
+}
+
+.bubbleThree { /* correspond à la troisième bulle orange en arrière plan */
+  position: absolute;
+  top: 60vh; left: 55vw;
+  border-radius: 50%;
+  z-index: -1;
+  width: 185px;
+  height: 162px;
+  background: rgba(184, 90, 45, 0.15);
+}
+
+.bubbleFour { /* correspond à la quatrième bulle orange en arrière plan */
+  position: absolute;
+  top: 40vh; right: 5vw;
+  border-radius: 50%;
+  z-index: -1;
+  width: 185px;
+  height: 162px;
+  background: rgba(184, 90, 45, 0.15);
+}

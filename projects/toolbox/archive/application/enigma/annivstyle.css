@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+  }
+
+/*****************************************************************************************************************************************/
+/*                                                        ENIGME                                                                         */
+/*****************************************************************************************************************************************/
+
+h1{
+    color: white;
+    font-size: 2.5em; 
+ } 
+
+.question{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.enonce{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.sherlock{
+    transform: scaleX(-1);
+    position: fixed;
+    margin-left: 78%;
+    top: 30%;
+}
+
+.pensif{
+    position: fixed;
+    margin-left: 15%;
+    top:33%
+}
+
+#textIndice{
+    text-align: center;
+    margin-top: 60px;
+}
+
+#indice{
+    opacity: 0.00001;
+    position: fixed;
+}
+
+#indice:hover{
+    opacity: 1;
+}
+
+#solution{
+    text-align: center !important;
+    margin-top: 80px;
+    position: static;
+}
+
+#btnSolution{
+    margin-top: 120px;
+    border-radius: 10%;
+    background: linear-gradient( #555, #2C2C2C);
+    border: none;
+    width: 150px;
+    height: 80px;
+    text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+    box-shadow: 0 0 5px rgba( 0, 0, 0, 0.5);
+    box-shadow: 0 -1px 0 rgba( 255, 255, 255, 0.4);
+}
+
+#btnSolution:hover{
+    color: #222;
+    background: #555;
+    background: linear-gradient( #777, #333);
+}
+
+#btnSolution:active{
+    color: #000;
+    background: #444;
+    background: linear-gradient( #555, #2C2C2C);
+    box-shadow: 1px 1px 10px black inset;
+    box-shadow: 0 1px 0 rgba( 255, 255, 255, 0.4);
+}
+
+@media only screen and (max-width: 1300px){
+    .sherlock{
+        margin-left: 70%;
+    }
+
+    .pensif{
+        margin-left: 9%;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .sherlock{
+        visibility: hidden;
+    }
+
+    .pensif{
+        visibility: hidden;
+    }
+}
+
+/*****************************************************************************************************************************************/
+/*                                                        HEADER                                                                         */
+/*****************************************************************************************************************************************/
+
+
+header{ /* correspond à la bande orange en haut */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FA7C50;
+    height: 10vh;
+    padding: 10px 20px;
+  }
+  
+  .logo-nav a img{ /* correspond au logo toolbox en haut à gauche */
+    width: 50px;
+    height: 50px;
+  }
+  
+  .logo-nav a img:hover{ /* correspond au logo toolbox en haut à gauche lorque l'on passe la souris dessus*/
+    transform: scale(1.1);
+  }
+  
+  .nav-title { /* correspond au titre "Piano" dans la bande orange en haut */
+    color: #fff;
+    font-size: 2.5em;
+  }
+  
+  .return-img a img { /* correspond au logo retour en haut à droite */
+    width: 3vw;
+    height: 5vh;
+  }
+  
+  .return-img a img:hover{ /* correspond au logo retour en haut à droite lorque l'on passe la souris dessus*/
+      transform: scale(1.1);
+  }
+  
+
+/*****************************************************************************************************************************************/
+/*                                                        BUBBLE                                                                         */
+/*****************************************************************************************************************************************/
+
+
+.bubbleOne {
+    position: absolute;
+    bottom: 0; left: 0;
+    z-index: -1;
+    border-radius: 50%;
+    width: 250px;
+    height: 200px;
+    background: rgba(242, 134, 83, 0.15);
+}
+
+.bubbleTwo {
+    position: absolute;
+    top: 25vh; left: 25vw;
+    border-radius: 50%;
+    z-index: -1;
+    width: 185px;
+    height: 162px;
+    background: rgba(184, 90, 45, 0.15);
+}
+
+.bubbleThree {
+    position: absolute;
+    top: 60vh; left: 55vw;
+    border-radius: 50%;
+    z-index: -1;
+    width: 185px;
+    height: 162px;
+    background: rgba(184, 90, 45, 0.15);
+}
+
+.bubbleFour {
+    position: absolute;
+    top: 40vh; right: 5vw;
+    border-radius: 50%;
+    z-index: -1;
+    width: 185px;
+    height: 162px;
+    background: rgba(184, 90, 45, 0.15);
+}
+
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="toolbox.svg" />
+    <link rel="stylesheet" href="annivstyle.css">
+    <title>Enigma - Anniversaire</title>
+</head>
+<body>
+    <header>
+        <div class="logo-nav"> <!-- class du logo toolbox pour le css -->
+          <a href="../../index.html"> <!-- lien ramenant à la page d'accueil -->
+              <img src="../../images/toolbox.svg" alt="ToolBox logo"> <!-- image du logo toolbox -->
+          </a>
+        </div>
+        <h1 class="nav-title">L'anniversaire</h1> <!-- titre de la page dans la bande orange en haut -->
+        <div class="return-img"> <!-- class du logo retour pour le css -->
+          <a href="enigma.html"> <!-- lien ramenant à la page d'accueil -->
+            <img src="../../images/return-btn.png" alt="Return image"> <!-- image du logo retour -->
+          </a>
+        </div>
+      </header>
+
+    <script>
+        function montrerSol(){          /*fonction qui permet de montrer la solution et qui s'execute seulement quand on clique sur le bouton*/
+            etatSolution = document.getElementById('solution')          /*permet de récupérer des informations sur le texte de la solution*/
+            if (etatSolution.style.display == 'none')           /*si aucune solution n'est affichée, alors la solution s'affiche et le texte du bouton devient cacher la solution*/
+            {
+                etatSolution.style.display = 'block';
+                btnSolution.value = 'Cacher la solution'
+            }
+            else               /*sinon la solution disparaît et le texte du bouton devient montrer la solution*/
+            {
+                etatSolution.style.display = 'none';
+                btnSolution.value = 'Montrer la solution'
+            }
+        }
+
+        function montrerIndice(){       /*fonction qui permet de montrer la solution et qui s'execute seulement quand on clique sur le bouton indice caché*/
+            etatIndice = document.getElementById('textIndice')      /*permet de récupérer des informations sur le texte de l'indice'*/
+            if (etatIndice.style.display == 'none')         /*si aucun indice n'est affiché, alors l'indice s'affiche*/
+            {
+                etatIndice.style.display = 'block';
+            }
+            else        /*sinon l'indice' disparaît*/
+            {
+                etatIndice.style.display = 'none';
+            }
+        }
+    </script>
+
+    <div class=enonce>      
+        <h3>Avant-hier, Catherine avait 17 ans ; l'année prochaine, elle aura 20 ans.</h4> 
+    </div>
+
+    <div class=question>
+        <h2>Comment est-ce possible ?</h2>
+    </div>
+    
+    <!--créer un bouton centré qui quand on clique dessus lance la fonction montrerSol-->
+    <center><input type="button" id="btnSolution" value="Montrer la solution" onclick="montrerSol('solution')"/></center>   
+
+    <div id="indice">           <!--créer un bouton caché qui quand on clique dessus lance la fonction montrerIndice-->
+        <button onclick="montrerIndice('textIndice')"><img src="indice.jpg"></button>
+    </div>
+
+
+    <div class="sherlock">
+        <img src="sherlock.webp">
+    </div>
+
+    <div class="pensif">
+        <img src="enigme.png">
+    </div>
+
+
+
+    <div id="textIndice" style="display:none">
+        <h4>Bravo !!! Vous avez le droit à un indice : Trouver la date à laquelle cette histoire serait possible (c'est au début de l'année)</h4>
+    </div>
+
+    <div id="solution" style="display:none">
+        <p>Hier, on était le 31 décembre, elle a eu 18 ans. 
+            <br>Cette année, elle va avoir 19 ans et l'année prochaine, 20 ans.
+        </p>
+    </div>
+
+    <!--bulles en arrière plan-->
+    <div class="bubbleOne"></div>
+    <div class="bubbleTwo"></div>
+    <div class="bubbleThree"></div>
+    <div class="bubbleFour"></div>
+
+    <!--tous ces commentaires sont identiques aux autres pages d'énigme-->

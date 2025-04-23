@@ -1,0 +1,9 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+
+# Ignore large installer files
+projects/tchu/tCHu-installer.exe
+projects/tchu/tCHu-installer.pkg

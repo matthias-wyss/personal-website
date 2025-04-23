@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2.5em;
+}
+
+.full-height-grow{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/*****************************************************************************************************************************************/
+/*                                                        MENU                                                                           */
+/*****************************************************************************************************************************************/
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FA7C50;
+    height: 10vh;
+    padding: 10px 20px;
+}
+
+header div
+{
+    margin-right: 10px;
+}
+
+.logo-nav a img{
+    width: 50px;
+    height: 50px;
+}
+
+.logo-nav a img:hover{
+    transform: scale(1.1);
+}
+
+/*****************************************************************************************************************************************/
+/*                                                        APPLICATION                                                                    */
+/*****************************************************************************************************************************************/
+
+.application {
+    width: 80vw;
+    margin: 20px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.application .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.application .row .rectangle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    border: 3px solid #FA7C50;
+    width: 300px;
+    height: 180px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+
+.application .row .rectangle img {
+    width: 295px;
+    height: 130px;
+}
+
+.application .row .rectangle .app-title {
+    color: #FA7C50;
+}
+
+.application .row .rectangle h2 a {
+    text-decoration: none;
+    color: #FA7C50;
+}
+
+.application .row .rectangle h2 a:hover{
+    cursor: pointer;
+    color: #f65f2a;
+    font-size: 1.05em;
+    padding: 1px;
+    transition-duration: .7s;
+    border: dashed #FA7C50;
+}
+
+/*****************************************************************************************************************************************/
+/*                                                        FOOTER                                                                         */
+/*****************************************************************************************************************************************/
+
+footer {
+    height: 50px;
+    background: #4B4542;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+footer .link {
+    margin-left: 10px;
+}
+
+footer .link a{
+    margin-left: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .link a:hover {
+    color: #e9cec5;
+}
+
+/*****************************************************************************************************************************************/
+/*                                                        BUBBLE                                                                         */
+/*****************************************************************************************************************************************/
+
+.bubbleOne {
+    position: absolute;
+    bottom: 0; left: 0;
+    z-index: -1;
+    border-radius: 50%;
+    width: 322px;
+    height: 274px;
+    background: rgba(242, 134, 83, 0.15);
+}
+
+.bubbleTwo {
+    position: absolute;
+    top: 25vh; left: 25vw;
+    border-radius: 50%;
+    z-index: -1;
+    width: 185px;
+    height: 162px;
+    background: rgba(184, 90, 45, 0.15);
+}
+
+.bubbleThree {
+    position: absolute;
+    top: 60vh; left: 55vw;
+    border-radius: 50%;
+    z-index: -1;
+    width: 185px;
+    height: 162px;
+    background: rgba(184, 90, 45, 0.15);
+}
+
+.bubbleFour {
+    position: absolute;
+    top: 40vh; right: 5vw;
+    border-radius: 50%;
+    z-index: -1;
+    width: 185px;
+    height: 162px;
+    background: rgba(184, 90, 45, 0.15);
+}
+
+/*****************************************************************************************************************************************/
+/*                                                        RESPONSIVE                                                                     */
+/*****************************************************************************************************************************************/
+
+@media screen and (max-width: 1048px) {
+    .application .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        margin: 5px;
+    }
+    .application .row .rectangle{
+        margin: 5px;
+    }
+}

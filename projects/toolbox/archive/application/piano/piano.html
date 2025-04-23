@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat"/> <!-- import de la police -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">  <!-- import de la police -->
+    <link rel="stylesheet" href="stylepiano.css"/> <!-- relie la page html à la page css -->
+    <script src="index.js"></script> <!-- relie la page html à la page javascript -->
+    <title>Piano</title> <!-- titre de la page -->
+</head>
+  <body>
+
+
+      <header>
+        <div class="logo-nav"> <!-- class du logo toolbox pour le css -->
+          <a href="../../index.html"> <!-- lien ramenant à la page d'accueil -->
+              <img src="../../images/toolbox.svg" alt="ToolBox logo"> <!-- image du logo toolbox -->
+          </a>
+        </div>
+        <h1 class="nav-title">Piano</h1> <!-- titre de la page dans la bande orange en haut -->
+        <div class="return-img"> <!-- class du logo retour pour le css -->
+          <a href="../../index.html"> <!-- lien ramenant à la page d'accueil -->
+            <img src="../../images/return-btn.png" alt="Return image"> <!-- image du logo retour -->
+          </a>
+        </div>
+      </header>
+
+
+      <div class="clesol"> <!-- class des images de clé de sol pour le css -->
+        <img class="hautgauche" src="images/clesol.png" alt="Clé de sol"> <!-- class de l'image de la clé de sol à gauche pour le css + image clé sol -->
+        <img class="hautdroit" src="images/clesol.png"alt="Clé de sol"> <!-- class de l'image de la clé de sol à droite pour le css + image clé sol -->
+      </div>
+
+
+      <h2>Cliquez pour jouer du piano<h2> <!-- première phrase + class de la première phrase pour le css -->
+      <p class="intro">Faites de la musique avec un seul clic sur le piano<p> <!-- deuxième phrase + class de la deuxième phrase pour le css -->
+      <p class="intro2">Ou faites de la musique avec votre clavier !</p> <!-- troisième phrase + class de la troisième phrase pour le css -->
+
+
+    <div class="app"> <!-- class de toute l'application piano pour le css -->
+
+      <div class="pads"> <!-- class de toutes les touches blanches pour le css -->
+        <div class="pad1"> <!-- class de la touche do1 pour le css -->
+          <audio class="sound" src="son/do1.mp3"></audio> <!-- son do1 + class du son des touches blanches pour le javascript -->
+          <p class="touche">a</p> <!-- texte écrit sur la touche do1 + class du texte écrit sur les touches blanches pour le css -->
+        </div>
+
+        <div class="pad2"> <!-- class de la touche ré1 pour le css -->
+          <audio class="sound" src="son/re1.mp3"></audio> <!-- son ré1 + class du son des touches blanches pour le javascript -->
+          <p class="touche">z</p> <!-- texte écrit sur la touche ré1 + class du texte écrit sur les touches blanches pour le css -->
+        </div>
+
+        <div class="pad3"> <!-- class de la touche mi1 pour le css -->
+          <audio class="sound" src="son/mi1.mp3"></audio> <!-- son mi1 + class du son des touches blanches pour le javascript -->
+          <p class="touche">e</p> <!-- texte écrit sur la touche mi1 + class du texte écrit sur les touches blanches pour le css -->
+        </div>
+
+        <div class="pad4"> <!-- class de la touche fa1 pour le css -->
+          <audio class="sound" src="son/fa1.mp3"></audio> <!-- son fa1 + class du son des touches blanches pour le javascript -->
+          <p class="touche">r</p> <!-- texte écrit sur la touche fa1 + class du texte écrit sur les touches blanches pour le css -->
+        </div>
+
+        <div class="pad5"> <!-- class de la touche sol1 pour le css -->
+          <audio class="sound" src="son/sol1.mp3"></audio> <!-- son sol1 + class du son des touches blanches pour le javascript -->
+          <p class="touche">t</p> <!-- texte écrit sur la touche sol1 + class du texte écrit sur les touches blanches pour le css -->
+        </div>
+
+        <div class="pad6"> <!-- class de la touche la1 pour le css -->
+          <audio class="sound" src="son/la1.mp3"></audio> <!-- son la1 + class du son des touches blanches pour le javascript -->
+          <p class="touche">y</p> <!-- texte écrit sur la touche la1 + class du texte écrit sur les touches blanches pour le css -->
+        </div>
+
+        <div class="pad7"> <!-- class de la touche si1 pour le css -->
+          <audio class="sound" src="son/si1.mp3"></audio> <!-- son si1 + class du son des touches blanches pour le javascript -->
+          <p class="touche">u</p> <!-- texte écrit sur la touche si1 + class du texte écrit sur les touches blanches pour le css -->
+        </div>
+
+        <div class="pad8"> <!-- class de la touche do2 pour le css -->
+          <audio class="sound" src="son/do2.mp3"></audio> <!-- son do2 + class du son des touches blanches pour le javascript -->
+          <p class="touche">i/<></p> <!-- texte écrit sur la touche do2 + class du texte écrit sur les touches blanches pour le css -->
+        </div>
+
+        <div class="pad9"> <!-- class de la touche ré2 pour le css -->
+          <audio class="sound" src="son/re2.mp3"></audio> <!-- son ré2 + class du son des touches blanches pour le javascript -->
+          <p class="touche">w</p> <!-- texte écrit sur la touche ré2 + class du texte écrit sur les touches blanches pour le css -->
+        </div>
+
+        <div class="pad10"> <!-- class de la touche mi2 pour le css -->
+          <audio class="sound" src="son/mi2.mp3"></audio> <!-- son mi2 + class du son des touches blanches pour le javascript -->
+          <p class="touche">x</p> <!-- texte écrit sur la touche mi2 + class du texte écrit sur les touches blanches pour le css -->
+        </div>
+
+        <div class="pad11"> <!-- class de la touche fa2 pour le css -->
+          <audio class="sound" src="son/fa2.mp3"></audio> <!-- son fa2 + class du son des touches blanches pour le javascript -->
+          <p class="touche">c</p> <!-- texte écrit sur la touche fa2 + class du texte écrit sur les touches blanches pour le css -->
+        </div>
+
+        <div class="pad12"> <!-- class de la touche sol2 pour le css -->
+          <audio class="sound" src="son/sol2.mp3"></audio> <!-- son sol2 + class du son des touches blanches pour le javascript -->
+          <p class="touche">v</p> <!-- texte écrit sur la touche sol2 + class du texte écrit sur les touches blanches pour le css -->
+        </div>
+
+        <div class="pad13"> <!-- class de la touche la2 pour le css -->
+          <audio class="sound" src="son/la2.mp3"></audio> <!-- son la2 + class du son des touches blanches pour le javascript -->
+          <p class="touche">b</p> <!-- texte écrit sur la touche la2 + class du texte écrit sur les touches blanches pour le css -->
+        </div>
+
+        <div class="pad14"> <!-- class de la touche si2 pour le css -->
+          <audio class="sound" src="son/si2.mp3"></audio> <!-- son si2 + class du son des touches blanches pour le javascript -->
+          <p class="touche">n</p> <!-- texte écrit sur la touche si2 + class du texte écrit sur les touches blanches pour le css -->
+        </div>
+
+        <div class="pad15"> <!-- class de la touche do3 pour le css -->
+          <audio class="sound" src="son/do3.mp3"></audio> <!-- son do3 + class du son des touches blanches pour le javascript -->
+          <p class="touche">,</p> <!-- texte écrit sur la touche do3 + class du texte écrit sur les touches blanches pour le css -->
+        </div>
+      </div>
+
+
+      <div class="padsn"> <!-- class de toutes les touches noires pour le css -->
+        <div class="padn1"> <!-- class de la touche do#1 pour le css -->
+          <audio class="soundn" src="son/doD1.mp3"></audio> <!-- son do#1 + class du son des touches noires pour le javascript -->
+          <p class="touchen">é</p> <!-- texte écrit sur la touche do#1 + class du texte écrit sur les touches noires pour le css -->
+        </div>
+
+        <div class="padn2"> <!-- class de la touche ré#1 pour le css -->
+          <audio class="soundn" src="son/reD1.mp3"></audio> <!-- son ré"1 + class du son des touches noires pour le javascript -->
+          <p class="touchen">"</p> <!-- texte écrit sur la touche ré#1 + class du texte écrit sur les touches noires pour le css -->
+        </div>
+
+        <div class="padn3"> <!-- class de la touche fa#1 pour le css -->
+          <audio class="soundn" src="son/faD1.mp3"></audio> <!-- son fa#1 + class du son des touches noires pour le javascript -->
+          <p class="touchen">(</p> <!-- texte écrit sur la touche fa#1 + class du texte écrit sur les touches noires pour le css -->
+        </div>
+
+        <div class="padn4"> <!-- class de la touche sol#1 pour le css -->
+          <audio class="soundn" src="son/solD1.mp3"></audio> <!-- son sol#1 + class du son des touches noires pour le javascript -->
+          <p class="touchen">-</p> <!-- texte écrit sur la touche sol#1 + class du texte écrit sur les touches noires pour le css -->
+        </div>
+
+        <div class="padn5"> <!-- class de la touche la#1 pour le css -->
+          <audio class="soundn" src="son/laD1.mp3"></audio> <!-- son la#1 + class du son des touches noires pour le javascript -->
+          <p class="touchen">è</p> <!-- texte écrit sur la touche la#1 + class du texte écrit sur les touches noires pour le css -->
+        </div>
+
+        <div class="padn6"> <!-- class de la touche do#2 pour le css -->
+          <audio class="soundn" src="son/doD2.mp3"></audio> <!-- son do#2 + class du son des touches noires pour le javascript -->
+          <p class="touchen">q</p> <!-- texte écrit sur la touche do#2 + class du texte écrit sur les touches noires pour le css -->
+        </div>
+
+        <div class="padn7"> <!-- class de la touche ré#2 pour le css -->
+          <audio class="soundn" src="son/reD2.mp3"></audio> <!-- son ré#2 + class du son des touches noires pour le javascript -->
+          <p class="touchen">s</p> <!-- texte écrit sur la touche ré#2 + class du texte écrit sur les touches noires pour le css -->
+        </div>
+
+        <div class="padn8"> <!-- class de la touche fa#2 pour le css -->
+          <audio class="soundn" src="son/faD2.mp3"></audio> <!-- son fa#2 + class du son des touches noires pour le javascript -->
+          <p class="touchen">f</p> <!-- texte écrit sur la touche fa#2 + class du texte écrit sur les touches noires pour le css -->
+        </div>
+
+        <div class="padn9"> <!-- class de la touche sol#2 pour le css -->
+          <audio class="soundn" src="son/solD2.mp3"></audio> <!-- son sol#2 + class du son des touches noires pour le javascript -->
+          <p class="touchen">g</p> <!-- texte écrit sur la touche sol#2 + class du texte écrit sur les touches noires pour le css -->
+        </div>
+
+        <div class="padn10"> <!-- class de la touche la#2 pour le css -->
+          <audio class="soundn" src="son/laD2.mp3"></audio> <!-- son la#2 + class du son des touches noires pour le javascript -->
+          <p class="touchen">h</p> <!-- texte écrit sur la touche la#2 + class du texte écrit sur les touches noires pour le css -->
+        </div>
+
+    </div>
+
+    
+    <div class="bubbleOne"></div> <!-- class de la première bulle orange pour le css -->
+    <div class="bubbleTwo"></div> <!-- class de la deuxième bulle orange pour le css -->
+    <div class="bubbleThree"></div> <!-- class de la troisième bulle orange pour le css -->
+    <div class="bubbleFour"></div> <!-- class de la quatrième bulle orange pour le css -->
+
+  </body>
+</html>

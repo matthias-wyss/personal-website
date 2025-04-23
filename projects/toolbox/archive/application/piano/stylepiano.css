@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  overflow: hidden; /* permet de cacher l'ascenseur pour scroller à droite */
+}
+
+
+/*****************************************************************************************************************************************/
+/*                                                        HEADER                                                                         */
+/*****************************************************************************************************************************************/
+
+
+header{ /* correspond à la bande orange en haut */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #FA7C50;
+  height: 10vh;
+  padding: 10px 20px;
+}
+
+.logo-nav a img{ /* correspond au logo toolbox en haut à gauche */
+  width: 50px;
+  height: 50px;
+}
+
+.logo-nav a img:hover{ /* correspond au logo toolbox en haut à gauche lorque l'on passe la souris dessus*/
+  transform: scale(1.1);
+}
+
+.nav-title { /* correspond au titre "Piano" dans la bande orange en haut */
+  color: #fff;
+  font-size: 2.5em;
+}
+
+.return-img a img { /* correspond au logo retour en haut à droite */
+  width: 3vw;
+  height: 5vh;
+}
+
+.return-img a img:hover{ /* correspond au logo retour en haut à droite lorque l'on passe la souris dessus*/
+    transform: scale(1.1);
+}
+
+
+/*****************************************************************************************************************************************/
+/*                                                        PIANO                                                                          */
+/*****************************************************************************************************************************************/
+
+
+.hautgauche { /* correspond à l'image de clé de sol en haut à gauche */
+  margin-top: 3%;
+  margin-left: -3%;
+  -webkit-transform: rotate(340deg);
+   -moz-transform: rotate(340deg);
+   -ms-transform: rotate(340deg);
+   -o-transform: rotate(340deg);
+   transform: rotate(340deg);
+}
+
+.hautgauche:hover { /* correspond à l'image de clé de sol en haut à gauche lorsque l'on passe la souris dessus */
+  transform: scale(1.1);
+  transition-duration: 10ms;
+}
+
+.hautdroit { /* correspond à l'image de clé de sol en haut à droite */
+  margin-top: -13%;
+  margin-left: 83%;
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.hautdroit:hover { /* correspond à l'image de clé de sol en haut à droite lorsque l'on passe la souris dessus */
+  transform: scale(1.1);
+  transition-duration: 10ms;
+}
+
+h2{ /* correspond à la phrase : "Cliquez pour jouer du piano" */
+  margin-top:-10%;
+  text-align: center;
+  font-size: 3em
+}
+
+.intro { /* correspond à la phrase : "Faites de la musique avec un seul clic sur le piano" */
+  margin-top: 14%;
+  font-size: 0.6em
+}
+
+.intro2 { /* correspond à la phrase : "Ou faites de la musique avec votre clavier !" */
+  margin-top: 1%;
+  font-size: 0.6em
+}
+
+.app { /* correspond à toute l'application piano */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pads{ /* correspond à toutes les touches blanches */
+  display: flex;
+  margin-top: 10%;
+}
+
+.pads > div { /* correspond à toutes les class appartenant à la class pads */
+  height: 200px;
+  width: 50px;
+  flex: 1;
+  background: white;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  z-index: 1; /* plan 1 situé au dessus de l'arrière plan et en dessous du plan 2 ==> permet d'avoir les touches blanches en dessous des touches noires */
+}
+
+.pad1 { /* correspond à la touche do1 */
+  border-left: 4px solid black;
+  border-right: 2px solid black;
+}
+
+.pad2 { /* correspond à la touche ré1 */
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.pad3 { /* correspond à la touche mi1 */
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.pad4 { /* correspond à la touche fa1 */
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.pad5 { /* correspond à la touche sol1 */
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.pad6 { /* correspond à la touche la1 */
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.pad7 { /* correspond à la touche si1 */
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.pad8 { /* correspond à la touche do2 */
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.pad9 { /* correspond à la touche ré2 */
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.pad10 { /* correspond à la touche mi2 */
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.pad11 { /* correspond à la touche fa2 */
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.pad12 { /* correspond à la touche sol2 */
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.pad13 { /* correspond à la touche la2 */
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.pad14 { /* correspond à la touche si2 */
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.pad15 { /* correspond à la touche do3 */
+  border-left: 2px solid black;
+  border-right: 4px solid black;
+}
+
+.touche { /* correspond au texte écrit sur les touches blanches */
+  font-size: 0.5em;
+  margin-top: 340%;
+}
+
+.padsn{ /* correspond à toutes les touches noires */
+  display: flex;
+}
+
+.padsn > div { /* correspond à toutes les class appartenant à la class padsn */
+  margin-top: -200px;
+  margin-bottom: 200px;
+  height: 150px;
+  width: 30px;
+  flex: 1;
+  background: black;
+  z-index: 2; /* plan 2 situé au dessus de l'arrière plan et du plan 1 ==> permet d'avoir les touches noires au dessus des touches blanches */
+}
+
+.padn1{ /* correspond à la touche do#1 */
+  margin-left: 25px;
+  margin-right: 20px;
+}
+
+.padn2{ /* correspond à la touche ré#1 */
+  margin-right: 70px;
+}
+
+.padn3{ /* correspond à la touche fa#1 */
+  margin-right: 20px;
+}
+
+.padn4{ /* correspond à la touche sol#1 */
+  margin-right: 20px;
+}
+
+.padn5{ /* correspond à la touche la#1 */
+  margin-right: 70px;
+}
+
+.padn6{ /* correspond à la touche do#2 */
+  margin-right: 20px;
+}
+
+.padn7{ /* correspond à la touche ré#2 */
+  margin-right: 70px;
+}
+
+.padn8{ /* correspond à la touche fa#2 */
+  margin-right: 20px;
+}
+
+.padn9{ /* correspond à la touche sol#2 */
+  margin-right: 20px;
+}
+
+.padn10{ /* correspond à la touche la#2 */
+  margin-right: 70px;
+}
+
+.touchen { /* correspond au texte écrit sur les touches noires */
+  font-size: 0.4em;
+  color: #fff;
+  margin-top: 400%;
+}
+
+
+/*****************************************************************************************************************************************/
+/*                                                        BUBBLE                                                                         */
+/*****************************************************************************************************************************************/
+
+
+.bubbleOne { /* correspond à la première bulle orange en arrière plan */
+  position: absolute;
+  bottom: 0; left: 0;
+  z-index: -1;
+  border-radius: 50%;
+  width: 322px;
+  height: 274px;
+  background: rgba(242, 134, 83, 0.15);
+}
+
+.bubbleTwo { /* correspond à la deuxième bulle orange en arrière plan */
+  position: absolute;
+  top: 25vh; left: 25vw;
+  border-radius: 50%;
+  z-index: -1;
+  width: 185px;
+  height: 162px;
+  background: rgba(184, 90, 45, 0.15);
+}
+
+.bubbleThree { /* correspond à la troisième bulle orange en arrière plan */
+  position: absolute;
+  top: 60vh; left: 55vw;
+  border-radius: 50%;
+  z-index: -1;
+  width: 185px;
+  height: 162px;
+  background: rgba(184, 90, 45, 0.15);
+}
+
+.bubbleFour { /* correspond à la quatrième bulle orange en arrière plan */
+  position: absolute;
+  top: 40vh; right: 5vw;
+  border-radius: 50%;
+  z-index: -1;
+  width: 185px;
+  height: 162px;
+  background: rgba(184, 90, 45, 0.15);
+}
